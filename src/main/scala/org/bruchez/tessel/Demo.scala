@@ -4,6 +4,9 @@ import scala.concurrent.duration._
 import scala.scalajs.js
 import scala.scalajs.js.Dynamic.{global ⇒ g}
 
+/**
+  * This is a quick demo of using Tessel 2 from Scala. I uses the `relay-mono` module and on-board LEDs.
+  */
 object Demo extends js.JSApp {
 
   def main(): Unit = {
