@@ -1,0 +1,12 @@
+{
+  "name": "tessel-scala",
+  "version": "0.0.0",
+  "description": "Tessel programmed in Scala",
+  "main": "index.js",
+  "repository": "https://github.com/ebruchez/tessel-scala",
+  "keywords": [
+    "Tessel",
+    "Scala"
+  ],
+  "license": "MIT"
+}
