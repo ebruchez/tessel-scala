@@ -2,7 +2,9 @@ package org.bruchez.tessel
 
 import scala.scalajs.js
 
-// These are a few Node.js APIs
+/**
+ * Facades for a few Node.js APIs.
+ */
 
 @js.native
 trait Error extends js.Object {

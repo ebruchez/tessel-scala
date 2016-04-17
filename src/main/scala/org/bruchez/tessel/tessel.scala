@@ -3,6 +3,13 @@ package org.bruchez.tessel
 import scala.concurrent.{Future, Promise}
 import scala.scalajs.js
 
+/**
+ * Facades for a few Tessel 2 APIs.
+ */
+
+// "tessel"
+// https://github.com/tessel/t2-firmware/blob/master/node/tessel-export.js
+
 @js.native
 trait Led extends js.Object {
   def on(): Unit = js.native
