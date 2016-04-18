@@ -6,8 +6,8 @@ This is a simple demo of running [Scala](http://www.scala-lang.org/) on [Tessel 
 
 This code includes:
 
-- the demo proper, [`Demo.scala`](blob/master/src/main/scala/org/bruchez/tessel/Demo.scala)
-- some minimal *facades* for [Tessel](https://github.com/ebruchez/tessel-scala/blob/master/src/main/scala/org/bruchez/tessel/tessel.scala) and [Node.js](https://github.com/ebruchez/tessel-scala/blob/master/src/main/scala/org/bruchez/tessel/node.scala)
+- the demo proper, [`Demo.scala`](src/main/scala/org/bruchez/tessel/Demo.scala)
+- some minimal *facades* for [Tessel](src/main/scala/org/bruchez/tessel/tessel.scala) and [Node.js](src/main/scala/org/bruchez/tessel/node.scala)
 
 ## Requirements
 
