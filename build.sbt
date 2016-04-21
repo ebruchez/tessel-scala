@@ -10,7 +10,7 @@ libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.0"
 
 scalaJSOutputWrapper := (
   """ |var addGlobalProps = function(obj) {
-      |  obj.myRequire = require;
+      |  obj.require = require;
       |}
       |if((typeof __ScalaJSEnv === "object") && typeof __ScalaJSEnv.global === "object") {
       |  addGlobalProps(__ScalaJSEnv.global);

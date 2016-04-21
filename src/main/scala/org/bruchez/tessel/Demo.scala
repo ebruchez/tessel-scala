@@ -13,8 +13,8 @@ object Demo extends js.JSApp {
 
     println(s"starting `main()` at ${new js.Date()} with node version ${g.process.version}")
 
-    val tessel    = g.myRequire("tessel").asInstanceOf[Tessel]
-    val relayMono = g.myRequire("relay-mono").asInstanceOf[RelayMono]
+    val tessel    = g.require("tessel").asInstanceOf[Tessel]
+    val relayMono = g.require("relay-mono").asInstanceOf[RelayMono]
 
     val relay     = relayMono.use(tessel.port.A)
 
