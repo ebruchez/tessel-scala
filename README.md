@@ -9,6 +9,8 @@ This code includes:
 - the demo proper, [`Demo.scala`](src/main/scala/org/bruchez/tessel/Demo.scala)
 - some minimal *facades* for [Tessel](src/main/scala/org/bruchez/tessel/tessel.scala) and [Node.js](src/main/scala/org/bruchez/tessel/node.scala)
 
+See also the companion blog post [Scala on Tessel 2](http://blog.bruchez.name/2016/04/scala-on-tessel-2.html).
+
 ## Requirements
 
 - Scala and `sbt`
