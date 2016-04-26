@@ -13,17 +13,10 @@ object Demo extends js.JSApp {
 
     println(s"starting `main()` at ${new js.Date()} with node version ${g.process.version}")
 
-    val tessel    = g.require("tessel").asInstanceOf[Tessel]
-    val relayMono = g.require("relay-mono").asInstanceOf[RelayMono]
+    val tessel    = Tessel()
+    val relayMono = RelayMono()
 
-    val relay     = relayMono.use(tessel.port.A)
-
-    var elapsedMinutes = 0
-
-    js.timers.setInterval(1.minute) {
-      elapsedMinutes += 1
-      println(s"Running for $elapsedMinutes minutes!")
-    }
+    val relay = relayMono.use(tessel.port.A)
 
     relay.onReady {
       println("Relay ready!")

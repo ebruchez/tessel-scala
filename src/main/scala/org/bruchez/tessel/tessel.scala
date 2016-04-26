@@ -2,6 +2,7 @@ package org.bruchez.tessel
 
 import scala.concurrent.{Future, Promise}
 import scala.scalajs.js
+import scala.scalajs.js.Dynamic.{global ⇒ g}
 
 /**
  * Facades for a few Tessel 2 APIs.
@@ -37,6 +38,10 @@ trait Ports extends js.Object {
 trait Tessel extends js.Object {
   def led: js.Array[Led] = js.native
   def port: Ports = js.native
+}
+
+object Tessel {
+  def apply() = g.require("tessel").asInstanceOf[Tessel]
 }
 
 // "relay-mono"
@@ -75,4 +80,8 @@ object Relay {
 @js.native
 trait RelayMono extends js.Object {
   def use(port: Port, callback: js.Function2[Error, Relay, _] = null): Relay = js.native
+}
+
+object RelayMono {
+  def apply() = g.require("relay-mono").asInstanceOf[RelayMono]
 }
